@@ -1,0 +1,7 @@
+a {
+    color: #303030;
+
+    &:not(.button):hover {
+        text-decoration: underline;
+    }
+}

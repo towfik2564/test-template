@@ -1,0 +1,28 @@
+.login {
+    background: url('../../assets/img/login-bg.png') no-repeat left;
+    padding: 4rem 0; 
+}
+
+.login-card {
+    border: 1px solid transparent;
+    background-image: linear-gradient(white, white),linear-gradient(90deg, #6DC0F9 0%, #C989DD 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.is-size-7 {
+    font-size: 0.875rem !important;
+}
+
+.card-img {
+    position: absolute;
+    right: -12.2rem;
+    bottom: -3.5rem;
+    z-index: -1;
+}
+
+.input::placeholder, .textarea::placeholder {
+    font-size: 14px;
+}
