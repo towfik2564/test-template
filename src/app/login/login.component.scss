@@ -1,6 +1,10 @@
 .login {
     background: url('../../assets/img/login-bg.png') no-repeat left;
-    padding: 4rem 0; 
+    padding: 2rem 1rem;
+
+    @media (min-width: 960px) {
+        padding: 4rem; 
+    }
 }
 
 .login-card {
@@ -18,9 +22,13 @@
 
 .card-img {
     position: absolute;
+    display: none;
     right: -12.2rem;
     bottom: -3.5rem;
     z-index: -1;
+    @media (min-width: 960px) {
+        display: block; 
+    }
 }
 
 .input::placeholder, .textarea::placeholder {

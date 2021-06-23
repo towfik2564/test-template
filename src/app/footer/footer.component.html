@@ -1,10 +1,10 @@
-<section class="container mb-4">
-    <div class="columns is-flex is-align-items-center">
-        <div class="column">
+<section class="container mb-4 p-3">
+    <div class="columns is-flex-desktop is-align-items-center">
+        <div class="column has-text-centered-touch">
             <h3 class="is-size-3 has-text-weight-bold is-family-montserrat">Besoin d'aide ?</h3>
             <p class="has-text-grey-light">Consultez notre aide en ligne ou contactez-nous</p>
         </div>
-        <div class="column has-text-right">
+        <div class="column has-text-centered-touch has-text-right-desktop">
             <a href="" class="button is-purple has-shadow">
                 <span class="icon">
                     <i [inlineSVG]="'/assets/svg/question-circle.svg'"></i>
@@ -17,7 +17,7 @@
 
 <section class="section has-background-white-ter">
     <div class="container">
-        <div class="columns is-mobile">
+        <div class="columns">
             <div class="column">
                 <h5 class="is-size-5 has-text-info is-family-montserrat has-text-weight-bold mb-2">À propos de nom</h5>
                 <a href="#" class="is-block is-size-7 mb-1">Lorem Ipsum</a>
@@ -78,14 +78,16 @@
             </div>
         </div>
         <h5 class="is-size-5 has-text-info is-family-montserrat has-text-weight-bold mb-2">Recherche de Lorem Ipsum</h5>
-        <a href="#" class="is-size-7 mb-1">Lorem Ipsum Lorem Ipsum</a>
-        <a href="#" class="is-size-7 mb-1 ml-5 has-text-weight-semibold">A</a>
-        <a href="#" class="is-size-7 mb-1 ml-2 has-text-weight-semibold" *ngFor="let item of alphabets">{{item}}</a>
+        <a href="#" class="is-size-7 mb-1 mr-5">Lorem Ipsum Lorem Ipsum</a>
+        <div class="is-inline-desktop is-block-touch">
+            <a href="#" class="is-size-7 has-text-weight-semibold">A</a>
+            <a href="#" class="is-size-7 ml-1 ml-md-2 has-text-weight-semibold" *ngFor="let item of alphabets">{{item}}</a>
+        </div>
         
     </div>
 </section>
 
-<section class="container mt-4">
+<section class="container mt-4 cr">
     <div class="columns is-flex is-align-items-center">
         <div class="column">
             <img class="is-block" src="assets/svg/logo.svg">
