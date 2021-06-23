@@ -1,0 +1,49 @@
+$icon-dimensions: 23px !default
+$icon-dimensions-small: 1rem !default
+$icon-dimensions-medium: 32px !default
+$icon-dimensions-large: 3rem !default
+$icon-text-spacing: 0.25em !default
+
+.icon, .icon i 
+  align-items: center
+  display: inline-flex
+  justify-content: center
+  height: $icon-dimensions
+  width: $icon-dimensions
+  // Sizes
+  &.is-small, &.is-small i 
+    height: $icon-dimensions-small !important
+    width: $icon-dimensions-small !important
+    font-size: $icon-dimensions-small
+  &.is-medium, &.is-medium i
+    height: $icon-dimensions-medium !important
+    width: $icon-dimensions-medium !important
+    font-size: $icon-dimensions-medium
+  &.is-large, &.is-large i
+    height: $icon-dimensions-large !important
+    width: $icon-dimensions-large !important
+    font-size: $icon-dimensions-large
+
+.icon-text
+  align-items: flex-start
+  color: inherit
+  display: inline-flex
+  flex-wrap: wrap
+  line-height: $icon-dimensions
+  vertical-align: top
+  .icon
+    flex-grow: 0
+    flex-shrink: 0
+    &:not(:last-child)
+      +ltr
+        margin-right: $icon-text-spacing
+      +rtl
+        margin-left: $icon-text-spacing
+    &:not(:first-child)
+      +ltr
+        margin-left: $icon-text-spacing
+      +rtl
+        margin-right: $icon-text-spacing
+
+div.icon-text
+  display: flex
